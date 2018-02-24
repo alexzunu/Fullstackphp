@@ -1,31 +1,13 @@
 <?php
 
 include "includes/header.php";
+include "includes/functions.php";
 
 $title = "Hola";
 $intro = "Bienvenido a mi página web. Mi nombre es Marco y soy fotografo aficionado.";
 $subtitle = "Fotos de lima";
+$fotos = fotos();
 
-$fotos = [
-  [
-    'title' => 'Centro financiero',
-    'url' => 'centro-financiero.php',
-    'img' => 'image/lima1.jpg'
-  ],
-  [
-
-      'title' => 'Costa verde',
-      'url' => 'costa-verde.php',
-      'img' => 'image/lima2.jpg'
-
-  ],
-  [
-    'title' => 'Malecon de Miraflores',
-    'url' => 'malecon-miraflores.php',
-    'img' => 'image/lima3.jpg'
-  ]
-
-]
 
 ?>
 
@@ -39,7 +21,7 @@ $fotos = [
 
 <div class="card">
   <div class="card-content">
-    <h3><a href="<?= $foto ['url']?>"><?= $foto ['title']?></a></h3>
+    <h3><a href="fotos.php?id=<?= $foto['id']?>"><?= $foto ['title']?></a></h3>
     <img src="<?= $foto ['img']?>">
   </div>
 </div>

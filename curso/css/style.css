@@ -54,3 +54,13 @@ img {
 .footer-link{
   color: #ffffff;
 }
+
+.formulario{
+  margin-bottom: 10px;
+}
+
+label {
+width: 100px;
+display: block;
+
+}
